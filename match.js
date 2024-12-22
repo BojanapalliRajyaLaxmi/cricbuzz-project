@@ -220,6 +220,7 @@ async function Squad() {
     console.error(error);
   }
 }
+Squad();
 function renderSquad() {
 
   subContainer.innerHTML = ""; // Temporary loader
@@ -286,7 +287,7 @@ async function info() {
     console.error(error);
   }
 }
-
+info()
 
 
 function renderInfo() {
@@ -356,6 +357,7 @@ async function scard() {
     console.error(error);
   }
 }
+scrad()
 function renderScard() {
   // Clear the content of subContainer
   subContainer.innerHTML = "";
