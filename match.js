@@ -80,6 +80,7 @@ async function match(url,options) {
     console.error(error);
   }
 }
+match()
 function formatISTDate(timestamp) {
     if (!timestamp) return "N/A";
   const date = new Date(parseInt(timestamp, 10));
