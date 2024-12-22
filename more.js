@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  async function series(url6, options6) {
+  async function series() {
     try {
       const storeTeamponse = await fetch(url6, options6);
       const storeTeamult = await storeTeamponse.json();
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-
+series()
   function formatISTDate(timestamp) {
     if (!timestamp) return "N/A";
     const date = new Date(parseInt(timestamp, 10));
@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error(error);
     }
   }
-  // seriesMtch();
+  seriesMtch();
   
   function renderSeriesMatches() {
     subContainer.innerHTML = ""; 
@@ -326,7 +326,7 @@ async function MatchSquads() {
     console.error(error);
   }
 }
-// MatchSquads()
+MatchSquads()
 function renderMatchSquads() {
   // Clear the previous content in subContainer
   subContainer.innerHTML = "";
@@ -374,7 +374,7 @@ async function matchStats() {
     console.error(error);
   }
 }
-// matchStats()
+matchStats()
 function renderMatchStats() {
   // Clear previous content in subContainer
   subContainer.innerHTML = "";
@@ -411,7 +411,7 @@ async function matchNews() {
     console.error(error);
   }
 }
-// matchNews()
+matchNews()
 function renderMatchNews() {
   // Clear the previous content in subContainer
   subContainer.innerHTML = "";
@@ -508,7 +508,7 @@ async function MatchVenue() {
     console.error(error);
   }
 }
-// MatchVenue()
+MatchVenue()
 function renderMatchVenue() {
   // Clear the previous content in subContainer
   subContainer.innerHTML = "";
@@ -588,7 +588,7 @@ const optionsa = {
 		'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com'
 	}
 };
-  async function team(urla,optionsa) {
+  async function team() {
     try {
       const storeTeamponse = await fetch(urla, optionsa);
       const storeTeamult = await storeTeamponse.json();
@@ -597,7 +597,7 @@ const optionsa = {
       console.error(error);
     }
   }
-
+team()
 function displayTeams() {
   let navele = document.createElement("a");
   navele.href = "./more.html";
@@ -670,7 +670,7 @@ const optionsb = {
 		'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com'
 	}
 };
-async function player(urlb,optionsb) {
+async function player() {
   
   try {
     const response = await fetch(urlb, optionsb);
@@ -680,7 +680,7 @@ async function player(urlb,optionsb) {
     console.error(error);
   }
 }
-
+player()
 function renderBowlingStats() {
   let navele = document.createElement("a");
   navele.href = "./more.html";
@@ -741,7 +741,7 @@ const optionsSchedule = {
 		'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com'
 	}
 };
-async function schedule(urlSchedule,optionsSchedule) {
+async function schedule() {
   
   try {
     const response = await fetch(urlSchedule, optionsSchedule);
@@ -752,7 +752,7 @@ async function schedule(urlSchedule,optionsSchedule) {
     console.error(error);
   }
 }
-
+schedule()
 function renderMatchSchedule() {
   let navele = document.createElement("a");
   navele.href = "./more.html";
@@ -884,7 +884,7 @@ async function Ranking() {
     console.error(error);
   }
 }
-
+Ranking()
 function menRank() {
   let navele = document.createElement("a");
   navele.href = "./more.html";
@@ -970,6 +970,7 @@ async function records() {
     console.error(error);
   }
 }
+records()
 function renderRecords(category = "Batting") {
   let navele = document.createElement("a");
   navele.href = "./more.html";
@@ -1006,10 +1007,5 @@ function renderRecords(category = "Batting") {
   });
 }
 
-  Ranking();
-  player(urlb,optionsb)
-  series(url6, options6);
-  team(urla,optionsa)
-  schedule(urlSchedule,optionsSchedule)
-   records()
+
 });
