@@ -1006,10 +1006,10 @@ function renderRecords(category = "Batting") {
   });
 }
 
-  // Ranking();
-  // player(urlb,optionsb)
-  // series(url6, options6);
-  // team(urla,optionsa)
-  // schedule(urlSchedule,optionsSchedule)
-  //  records()
+  Ranking();
+  player(urlb,optionsb)
+  series(url6, options6);
+  team(urla,optionsa)
+  schedule(urlSchedule,optionsSchedule)
+   records()
 });
