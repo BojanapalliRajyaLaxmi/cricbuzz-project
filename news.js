@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error(error);
     }
   }
-  // newsList()
+  newsList()
   function fetchAndRenderStories() {
     subContainer.innerHTML = ""; 
     let storiesData = JSON.parse(localStorage.getItem("allStories"));
@@ -173,7 +173,7 @@ async function renderTopics() {
     console.error(error);
   }
 }
-// renderTopics()
+renderTopics()
 function displayTopics() {
   subContainer.innerHTML="";
   let topicsData = JSON.parse(localStorage.getItem("news1"));
@@ -219,7 +219,7 @@ async function renderCategories() {
     console.error(error);
   }
 }
-// renderCategories()
+renderCategories()
 function displayCategories() {
   subContainer.innerHTML=""
   let categoriesData = JSON.parse(localStorage.getItem("categories2"));
@@ -272,7 +272,7 @@ async function renderSpecial() {
     console.error(error);
   }
 }
-// renderSpecial()
+renderSpecial()
 function displaySpecialsData() {
   subContainer.innerHTML = ""; 
   const specialsData = JSON.parse(localStorage.getItem("special"));
@@ -318,7 +318,7 @@ async function insideStory() {
         console.error(error);
     }
 }
-// insideStory();
+insideStory();
 function inside() {
     let res = JSON.parse(localStorage.getItem("Story"));
     clearDisplayArea(); 
