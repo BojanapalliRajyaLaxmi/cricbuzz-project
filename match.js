@@ -71,7 +71,7 @@ const options = {
 		'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com'
 	}
 };
-async function match(url,options) {
+async function match() {
   try {
     const response = await fetch(url, options);
     const result = await response.text();
@@ -358,7 +358,7 @@ async function scard() {
     console.error(error);
   }
 }
-scrad()
+scard()
 function renderScard() {
   // Clear the content of subContainer
   subContainer.innerHTML = "";
