@@ -574,5 +574,5 @@ matchCard.textContent = "Click here to load match details";
 subContainer.appendChild(matchCard);
 });
 
-// info();
-// scard();
+info();
+scard();
