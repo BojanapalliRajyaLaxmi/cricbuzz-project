@@ -71,7 +71,7 @@ const options = {
 		'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com'
 	}
 };
-async function match() {
+async function match(url,options) {
   try {
     const response = await fetch(url, options);
     const result = await response.text();
@@ -80,7 +80,6 @@ async function match() {
     console.error(error);
   }
 }
-match()
 function formatISTDate(timestamp) {
     if (!timestamp) return "N/A";
   const date = new Date(parseInt(timestamp, 10));
@@ -221,7 +220,6 @@ async function Squad() {
     console.error(error);
   }
 }
-Squad();
 function renderSquad() {
 
   subContainer.innerHTML = ""; // Temporary loader
@@ -288,7 +286,7 @@ async function info() {
     console.error(error);
   }
 }
-info()
+
 
 
 function renderInfo() {
@@ -358,7 +356,6 @@ async function scard() {
     console.error(error);
   }
 }
-scard()
 function renderScard() {
   // Clear the content of subContainer
   subContainer.innerHTML = "";
